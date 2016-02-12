@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Drones as a Service (DaaS)</title>
+  </head>
+  <body>
+
+    <!-- CSS -->
+    <style scoped>
+      .whiteBox {
+        background-color: white;
+      }
+    </style>
+
+    <!-- HTML -->
+    <div id='wrapper'>
+      <div class="whiteBox">
+        <h1>Need a Swarm?</h1>
+        <div id="sub" class="whiteBox">
+          Drones as a Service
+        </div>
+        <p id='videoControls'>
+          Video Controls:
+          <br>
+          <a href="#" class="tubular-play">Play</a> |
+          <a href="#" class="tubular-pause">Pause</a> |
+          <a href="#" class="tubular-volume-up">Louder</a> |
+          <a href="#" class="tubular-volume-down">Quieter</a> |
+          <a href="#" class="tubular-mute">Mute</a>
+        </p>
+      </div>
+    </div> <!--Wrapper div -->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="jquery.tubular.1.0.1/js/jquery.tubular.1.0.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#wrapper').tubular({videoId: 'ShGl5rQK3ew', start: 27});
+      });
+    </script>
+    <script src="node_modules/substituteteacher.js/src/substituteteacher.min.js"></script>
+    <script type="text/javascript">
+      var sub = new Sub([
+      "Communications",
+      "Surveillance",
+      "Intimidation",
+      "Beautiful Videography",
+      "Rent a drone swarm today"
+      "I, for one, welcome our new drone overlords"
+      ]).run();
+    </script>
+  </body>
+</html>
